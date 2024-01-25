@@ -1,0 +1,105 @@
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Create 310 milestone1 issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 milestone1
+        content-filepath: ./issue-content/dsci-310-milestone1.md
+    - name: Create 310 milestone2 issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 milestone2
+        content-filepath: ./issue-content/dsci-310-milestone2.md
+    - name: Create 310 milestone3 issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 milestone3
+        content-filepath: ./issue-content/dsci-310-milestone3.md
+    - name: Create 310 peer review issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 peer review
+        content-filepath: ./issue-content/dsci-310-peer_review.md
+    - name: Create 310 final project issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 final project
+        content-filepath: ./issue-content/dsci-310-milestone4.md
+    - name: Create 310 team work issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 team work reflection
+        content-filepath: ./issue-content/dsci-310-team_work.md
+    - name: Create 310 individual assignment 1 issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 individual assignment 1
+        content-filepath: ./issue-content/individual_assignment.md
+    - name: Create 310 individual assignment 2 issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 individual assignment 2
+        content-filepath: ./issue-content/individual_assignment.md
+    - name: Create 310 individual assignment 3 issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 individual assignment 3
+        content-filepath: ./issue-content/individual_assignment.md
+    - name: Create 310 individual assignment 4 issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 individual assignment 4
+        content-filepath: ./issue-content/individual_assignment.md
+    - name: Create 310 individual assignment 5 issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 individual assignment 5
+        content-filepath: ./issue-content/individual_assignment.md
+    - name: Create 310 midterm exam issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 midterm exam
+        content-filepath: ./issue-content/exam.md
+    - name: Create 310 final exam issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: DSCI 310 final exam
+        content-filepath: ./issue-content/exam.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
